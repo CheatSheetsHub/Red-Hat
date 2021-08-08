@@ -1,0 +1,31 @@
+If You Like our Templeate 
+
+1. edit linux 
+icon : https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=linux
+
+2. edit manu icon : https://fontawesome.com/v5.9/icons?d=gallery&p=2
+
+
+
+
+
+links that help you (ubuntu)
+https://www.lifewire.com/beginners-guide-to-ubuntu-2205722
+
+https://tecadmin.net/install-development-tools-on-ubuntu/
+
+https://help.ubuntu.com/community/Troubleshooting
+
+https://itsfoss.com/getting-started-with-ubuntu/
+
+
+
+
+
+
+
+
+>>>if You like jekyll tampleate 
+https://idratherbewriting.com/documentation-theme-jekyll/index.html
+
+ 

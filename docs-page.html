@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>needlinux- Red Hat</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4">
+    <meta name="author" content="naem azam at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/needlinux.png" alt="logo"><span class="logo-text">Need<span class="text-alt">Linux</span><sup>Red Hat</sup></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>    
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-linux fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-ubuntu fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+		            <a href="menu.html" class="btn btn-primary d-none d-lg-flex">Menu</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fab fa-ubuntu"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">What is Red Hat Linux?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Red Hat Linux Features</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Why Should I Use Red Hat Linux?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Which Image Should I Download?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Desktop EnvironmentPackages</a></li>
+				    
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Intel-based PCs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Virtual Machines</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Basic Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Learn Basic Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Red Hat linux Commands</a></li>
+				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-terminal"></i></span>Top Used Tools</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Perfomance Tools </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Vulnerability Assessment Tools</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Wireless Tools</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">Website Penetration</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-5">Exploitation</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Trobleshooting</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">The Basics of Troubleshooting</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Installations Failures</a></li><li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
+				    
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Websites</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Discuss Red Hat Linux</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">How can a user rename a file in Red Hat Linux?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">What is the command to install Rpm packages? </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">How to create a partition of 100MB and mount it?</a></li>
+				   
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2021-06-01</span></h1>
+					    <section class="docs-intro">
+						    <p>Linux is a community of open-source Unix like operating systems that are based on the Linux Kernel. It is a free and open-source operating system and the source code can be modified and distributed to anyone commercially or noncommercially under the GNU General Public License.</p>
+							<img class="logo-icon mr-2" src="redhat%20db.jpg"width="1024"height="600"> </img>
+						</section><!--//docs-intro-->
+						
+						
+				    <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">What is Red Hat Linux?</h2>
+						<p>Red Hat is one of the leading contributors to the Linux kernel and associated technologies in the greater open source community.
+Red Hat® Enterprise Linux® is the world's leading enterprise Linux platform. </p>
+<p>It's an open source operating system (OS). It's the foundation from which you can scale existing apps—and roll out emerging technologies—across bare-metal, virtual, container, and all types of cloud environments 
+
+Red Hat Linux, created by the company Red Hat, was a widely used Linux distribution until its discontinuation in 2004. Early releases of Red Hat Linux were called Red Hat Commercial Linux. Red Hat published the first non-beta release in May 1995.</p>
+						<img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/840px-Red_Hat_Enterprise_Linux_(RHEL).jpg"> </img>
+					
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Red-Hat Linux Features</h2>
+						<p><li>Red Hat provides storage, operating system platforms, middleware, applications, management products, and support, training, and consulting services. Red Hat creates, maintains, and contributes to many free software projects</li></p>
+						<p><li>Red Hat provides storage, operating system platforms, middleware, applications, management products, and support, training, and consulting services. Red Hat creates, maintains, and contributes to many free software projects </li></p>
+      <p><li>Red Hat Enterprise Linux gives you a consistent, stable foundation across hybrid cloud deployments, along with built-in manageability and integration with the broader Red Hat management and automation portfolio.</li> </p>
+  <p><li>The open nature of Red Hat® Virtualization delivers a lower total cost of ownership—when compared to other solutions. One customer’s return on investment was 71% in the first 16 months.</li> </p>
+   <p><li>Red Hat Virtualization virtualizes Linux and Windows workloads for improved performance. CorpFlex has achieved VM performance equal to or better than its proprietary virtualization solution especially for Linux workloads by using Red Hat Virtualization. Improved Linux workload performance has also allowed CorpFlex to optimize their hardware and replace it less often.</li> </p>
+ <p><li>Intuitive tools help you start using Red Hat Virtualization quickly and even help you automate migration from another vendor.</li> </p>
+ <p><li>Red Hat Virtualization has everything you expect from an enterprise virtualization solution: The ability to build, start, stop, pause, migrate, template VMs by the tens or hundreds as well as support for desktop and server profiles.</li></p>
+              <img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/redhat%20website.JPG"width="1024"height="600"> </img>
+						
+						
+						</div><!--//table-responsive-->
+						
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-3">
+					
+						  <h2 class="section-heading"> &nbsp;&nbsp&nbsp;&nbsp Why Should I Use Red Hat Linux?</h2>
+						<p>&nbsp;&nbsp&nbsp;&nbsp Every technology in your IT stack needs to work together. And the workloads need to be portable and scalable across bare metal servers, virtual machines, containers, and private and public clouds. They need a modern, security-oriented operating system (OS). That OS is Red Hat® Enterprise Linux®.</p>
+
+                      <p><li>&nbsp;&nbsp&nbsp;&nbsp Standard OS </li></p>
+                          <p>&nbsp;&nbsp&nbsp;&nbsp With a standard OS underlying your workloads, you can easily move them across environments—where it makes sense for your business. Red Hat Enterprise Linux gives you a consistent, stable foundation across hybrid cloud deployments, along with built-in manageability and integration with the broader Red Hat management and automation portfolio.</p>
+                             <p><li>&nbsp;&nbsp&nbsp;&nbsp Certified hardware,software,solutions </li></p>
+                          <p>&nbsp;&nbsp&nbsp;&nbsp
+                            With thousands of certified hardware, software, and cloud solutions, Red Hat Enterprise Linux is your foundation for innovation, offering the latest stable development tools, container technologies, hardware, and cloud advancements.</p>
+                               <p>&nbsp;&nbsp&nbsp;&nbsp
+                                   According to Gartner, “The landscape of cloud adoption is one of hybrid clouds and multiclouds. By 2020, 75% of organizations will have deployed a multicloud or hybrid cloud model."
+                                      Every cloud is unique. That means you need a flexible—but stable—OS. Red Hat Enterprise Linux offers the flexibility of open source code and the innovation of open source communities, along with certifications from hundreds of public cloud and service providers. Red Hat has designed a container platform, Red Hat OpenShift, so you can build, deploy, and scale cloud-native applications in public clouds—allowing you to confidently implement the cloud strategy that works for you.</p>
+
+                                    <p>&nbsp;&nbsp&nbsp;&nbsp <li> More Secured Features</li></p>
+                                <p>&nbsp;&nbsp&nbsp;&nbsp A more secure datacenter begins with the operating system. Red Hat Enterprise Linux has built-in security features such as Security-Enhanced Linux (SELinux) and mandatory access controls (MAC) to help you combat intrusions and meet regulatory compliance. Red Hat Enterprise Linux is also Common Criteria and FIPS 140-2 certified, as well as being the first Linux container framework support to be Common Criteria-certified (v7.1).</p>
+                             <p>&nbsp;&nbsp&nbsp;&nbsp
+                           Using a supported, enterprise open source OS, like Red Hat Enterprise Linux, means that thousands of developers are monitoring millions of lines of code in the Linux kernel—finding flaws and developing fixes before vulnerabilities become problems. Red Hat has dedicated teams of experts verifying those fixes and deploying patches without interrupting your applications, like those that helped handle Meltdown and Spectre a few years ago.
+                       </p>
+                 <p><li>&nbsp;&nbsp&nbsp;&nbsp Trustworthiness</li></p>
+                     <p>&nbsp;&nbsp&nbsp;&nbsp
+                        A Red Hat Enterprise Linux subscription helps you maintain critical applications for 10 years or more with deployment choices of major, supported versions and a commitment to preserve app stability with each minor update.
+                           Red Hat is one of the leading contributors to the Linux kernel and associated technologies in the greater open source community, and has been since the beginning. Red Hat engineers help improve features, reliability, and security to make sure your infrastructure performs and remains stable—no matter your use case and workload.</p>
+                                      <p>&nbsp;&nbsp&nbsp;&nbsp
+                                           However 
+                                              With Red Hat, you get access to the benefits of open source for the enterprise—like community-driven upstream innovation—delivered with enterprise-level support to help your organization safely use open source technology.</p>
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/linux-fedora-electric.jpg"width="1024"height="600"> > </img>
+						
+                        </section><!--//section-->
+						
+                    <hr size = "4">
+					<hr size = "4">
+					<section class="docs-section" id="item-1-4">
+						<h2 class="section-heading">Which Image Should I Download?</h2>
+						<p>To download the RHEL 8 ISO image at no cost at all, head over the Red Hat developer program and create an account. Fill in all the required details. Once done, proceed over to the Red Hat Login page to complete your profile by providing other details such as your local address.
+
+                When downloading Red Hat Enterprise Linux from the Customer Portal, there are multiple types of Red Hat Enterprise Linux 8 installation ISO images are available.</p>
+
+   <p><b> Installer </b></p>
+     <p> Download either the Binary DVD or Boot ISO image from the Customer Portal. Either of these can be modified using procedures in the guide; other available downloads, such as the KVM Guest Image or Supplementary DVD can not. The variant of the image (such as Server or ComputeNode) does not matter in this case; any variant can be used.
+ </p>
+<p><li> <b>boot.iso</li></b></p>
+<p>
+Used to install the operating system from another source (such as a http repository of the binary files). Can also be used to enter Rescue Mode.
+ </p>
+<p><li><b>Binary DVD</li></b> </p>
+<p>The discs required to install and use Red Hat Enterprise Linux. Can also be used to enter Rescue Mode. </p>
+<p><li><b>WinSync Installer</li></b></p>
+<p> Windows installer file (.msi) for the WinSync application, which is used in conjunction with Red Hat Enterprise Linux to sync a Windows Server Active Directory.</p>
+<p><li><b>Source DVD</li></b></p>
+<p>Source code (human-readable programming language instructions) for Red Hat Enterprise Linux, provided in compliance with the GNU General Public License which Red Hat Enterprise Linux is created under. There is no documentation for the source DVDs. These can be used to compile or develop your own software based off the Red Hat version.</p>
+
+<p><li><b>P2V ISO</li></b></p>
+This ISO is used for converting your Physical RHEL system to a Virtual RHEL system
+
+<p><li><b>KVM Guest Image</li></b></p>
+<p>You can use a ready RHEL KVM guest qcow2 image, as these images are configured with cloud-init and must take advantage of ec2-compatible metadata services for provisioning SSH keys in order to function properly. For more information see the Openstack Platform Guide
+                         
+</p>
+                             <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/iso%20image%201.JPG" width="1024"height="600"> </img>
+							  <br>
+							  <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/iso%20image%202.JPG"width="1024"height="600"> </img>
+
+						
+					</section><!--//section-->
+					
+					 <hr size = "4">
+					<hr size = "4">
+					
+					<section class="docs-section" id="item-1-5">
+						<h2 class="section-heading">Desktop Environments Packages of Red Hat Linux</h2>
+						<p>customizing and using GNOME 3, which is the only desktop environment available in RHEL 8. The basics of using GNOME Shell and displaying the graphics are given, as well as the instructions for system administrators for configuring GNOME on a low level and customizing the desktop environment for multiple users. also how to handle selected system administration tasks using the desktop environment.</p>
+<p>Red Hat is committed to replacing problematic language in our code, documentation, and web properties.</p>
+
+<p>Red Hat Enterprise Linux 8 is shipped with the default desktop environment GNOME 3.</p>
+
+<p>GNOME 3 represents a presentation layer that provides a graphical user interface as well as the focused working environment, which enables you to access all your work from one place..</p>
+<p>The GNOME environment provides the hot corner functionality, which is enabled by default. This means that when you move the cursor to the area of the top left corner and press the cursor in this area, the Activities Overview menu opens automatically.</p>
+    <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/getting%20started.JPG"width="1024"height="600"> </img>
+						<hr>
+						<hr>
+						</section>
+
+					    <!--//section-->
+					</header></article>
+					
+					<article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Installation</h1>
+					    <section class="docs-intro">
+<p> IMPORTANT! Never download Red Hat Linux images from anywhere other than the official sources.
+Installing RedHat Linux as workstation and server. The most important factor in the installation of Linux is having the right hardware, as discussed in the Linux hardware requirements tutorial. The next most important factor is obtaining information about your hardware before you start the installation. </p>
+
+<p>Red Hat Enterprise Linux Server for ARM, based on Red Hat Enterprise Linux, is designed to work with 64-bit ARM v8-A architecture and offers a familiar, standards-based operating system and tools. As a result, the platform offers a seamless user experience across architectures and simplifies porting and development</p>
+
+ <br>
+ <br>
+	     <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/rd%20settings%201.JPG"width="800"height="450"> </img>	
+                      <br>     
+<br>
+<br>					  
+									 
+  <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/red%20hat%20system%20settings%201.JPG"width="800"height="450"> </img>
+<br>
+						<br>
+						<br>
+     <center> <img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/system%20settings%20processor.JPG"width="800"height="450"> </img>
+                                    
+									 <br>
+									<br>
+									<br>
+	<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/system%20setting%20storage.JPG"width="800"height="450"> </img>
+                   								
+                                            <br>
+											<br>
+											<br>
+
+					   <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/status.JPG"width="800"height="450"> </img> 
+					   <br>
+					   <br>
+					   <br>
+
+    <center> <img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/installing%20pase%201.JPG"width="800"height="450"> </img>
+ <br>			   
+ <br>
+ <br>
+	<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/restarting%20and%20power%20off.JPG"width="800"height="450"> </img>
+							   <br>
+							   <br>
+							   <br>
+             <center> <img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/installed%20software.JPG"width="800"height="450"> </img>
+              <br>
+			  <br>
+			  <br>
+			<center> <img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/installed%20software2.JPG"width="800"height="450"> </img>
+	 
+											<br>
+											<br>
+											<br>
+									
+           <center> <img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/installing%20red%20hat%20%20to%20virtual%20box/software%20management.JPG"width="800"height="450"> </img>									<br>
+		<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://access.redhat.com/" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Download Now</a></th>
+										<th scope="col"><a href="#" class="btn btn-secondary"><i class="fas fa-book mr-2"></i> Read PDF Full Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>	
+</div>								
+						</section><!--//docs-intro-->
+						</section><!--//section-->
+						<hr>
+						<hr>
+					<section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Intel Based PCs</h2>
+						<p>Hardware compatibility is particularly important if you have an older system or a system that you built yourself. Red Hat Enterprise Linux 6.9 should be compatible with most hardware in systems that were factory built within the last two years.</p>
+						<p>One consistent requirement is your processor. Red Hat Enterprise Linux 6.9 supports, at minimum, all 32-bit and 64-bit implementations of Intel microarchitecture from P6 and onwards and AMD microarchitecture from Athlon and onwards.</p>
+						<p>
+						A piece of minimal boot media is a CD, DVD, or USB flash drive that contains the software to boot the system and launch the installation program, but which does not contain the software that must be transferred to the system to create a Red Hat Enterprise Linux installation.</p>
+						<th scope="col"><a href="https://hardware.redhat.com/" class="btn btn-primary"><i class="fas fa-download mr-2"></i> The most recent RHEL list of supported hardware </a></th>
+					</section><!--//section-->
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Virtual Machines</h2>
+						<p>Why choose Red Hat? Red Hat has supported virtualization software development for a long time—improving the KVM hypervisor and contributing to KVM and oVirt since both communities were founded. ... Red Hat® Virtualization is an open, software-defined platform that virtualizes Linux and Microsoft Windows workloads</p>
+						<p>Red Hat® Virtualization is an enterprise virtualization platform that supports key virtualization workloads including resource-intensive and critical applications, built on Red Hat Enterprise Linux® and KVM and fully supported by Red Hat.</p>
+					
+						<th scope="col"><a href="https://developers.redhat.com/rhel8/install-rhel8-vbox" class="btn btn-primary"><i class="fas fa-download mr-2"></i> RHEL 8 VIRTUALBOX </a></th>
+					</section><!--//section-->
+				    </header>
+			    </article>
+			     <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Basic Commands</h1>
+					    <section class="docs-intro">
+						  <p> Welcome to this new experience I’m sure you will enjoy once you start playing with your terminal … Kali Linux commands are nothing special from Linux commands they are the same so what you are going to learn here will work in every Linux system you may use, try over and over we are learning at the end and this is the most important part of it,
+Commands are almost everything in Linux so you must learn at least the basic commands we are not in Windows to click we are in Linux to type!
+
+so here is a list for some of the basic commands for Red Hat Linux </p>
+						  
+						  </section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Learn Basic Commands </h2>
+<p>When operating a Linux OS, you need to use a shell — an interface that gives you access to the operating system’s services. Most Linux distributions use a graphic user interface (GUI) as their shell, mainly to provide ease of use for their users. </p>
+					<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://www.redhat.com/sysadmin/basic-linux-commands" class="btn btn-primary"><i class="fas fa-download mr-2"></i> View Linux Basic Commands </a></th>
+										<th scope="col"><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/system_administrators_guide/red_hat_enterprise_linux-7-system_administrators_guide-en-us.pdf" class="btn btn-secondary"><i class="fas fa-book mr-2"></i> Read PDF Full Guide</a></th>
+										<th scope="col"><a href="https://developers.redhat.com/topics/linux" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Red Hat linux Commands</h2>
+<p> Red Hat Linux commands are nothing special from Linux commands they are the same so what you are going to learn here will work in every Linux system you may use, try over and over we are learning at the end and this is the most important part of it, </p> 
+		<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://access.redhat.com/sites/default/files/attachments/rhel_5_6_7_cheatsheet_27x36_1014_jcs_web.pdf" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Red Hat linux Commands Cheatcheet </a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			   <!--//section-->
+			   
+			   <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Top Used Tools </h1>
+					    <section class="docs-intro">
+						    <p>Red Hat provides storage, operating system platforms, middleware, applications, management products, and support, training, and consulting services. Red Hat creates, maintains, and contributes to many free software projects. Here we have the list of important Red Hat Linux tools that could save a lot of your time and effort.</p> 
+				         
+							</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Performance Tools</h2>
+						<P>Performance Co-Pilot (PCP), a suite of tools, services, and libraries for acquisition, archiving, and analysis of system-level performance measurements. Its light-weight, distributed architecture makes it particularly well suited to centralized analysis of complex systems.</P>
+						<P>Performance metrics can be added using the Python, Perl, C++ and C interfaces. Analysis tools can use the client APIs (Python, C++, C) directly, and rich web applications can explore all available performance data using a JSON interface.</P>
+						<h3> SystemTap </h3>
+						<p>These include optional pure user-space script execution, richer and more efficient Java probing, virtual machine probing, improved error messages, and a number of bug fixes and new features.</p>
+						<h4>Valgrind</h4>
+						<p>valgrind, an instrumentation framework that includes a number of tools to profile applications. This version is based on the Valgrind 3.9.0 release and includes numerous improvements relative to the Red Hat Enterprise Linux 6 and Red Hat Developer Toolset 2.1 counterparts, which were based on Valgrind 3.8.1.</p>
+						<img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/perfomance%20assessment.png"> </img>
+						
+				
+						
+		<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/performance_tuning_guide/ch-performance-co-pilot" class="btn btn-primary"><i class="fas fa-download mr-2"></i> RHEL Perfomance Co-Pilot Tool Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>
+						</section><!--//section-->
+					
+				
+				<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Vulnerability Assessment Tools</h2>
+						<p>Vulnerability assessment tools are designed to automatically scan for new and existing threats that can target your application. Types of tools include: Web application scanners that test for and simulate known attack patterns. Protocol scanners that search for vulnerable protocols, ports and network services. </p> 
+						
+		<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/security_guide/index" class="btn btn-primary"><i class="fas fa-download mr-2"></i> RHEL Security Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>
+						</section>
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Wireless Tools</h2>
+						<img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/Network_Configuration-NM-Wireless_authentication_required_6.4.png"> </img>
+						<br/>
+						<p> Wireless tools for Linux is a collection of user-space utilities written for Linux kernel-based operating systems to support and facilitate the configuration of device drivers of wireless network interface controllers and some related aspects of networking using the Linux Wireless Extension.</p>
+			<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://access.redhat.com/components/wireless-tools" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Install Wireless Tools on RHEL</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>			
+						</section>
+					<section class="docs-section" id="item-4-4">
+						<h2 class="section-heading">Website Penetration</h2>
+						<img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/web%20penetration.png"> </img>
+						
+						<p>Web application penetration testing is the process of using penetration testing techniques on a web application to detect its vulnerabilities. It is similar to a penetration test and aims to break into the web application using any penetration attacks or threats.</p>
+						<p>The assessment is undertaken to check for holes and potential vulnerabilities, the penetration testing actually attempts to exploit the findings. </p>
+					<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-vulnerability_assessment" class="btn btn-primary"><i class="fas fa-download mr-2"></i> RHEL security vulnerability Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>		
+						
+						</section>
+					
+					<section class="docs-section" id="item-4-5">
+						<h2 class="section-heading">Exploitation</h2>
+						
+						
+						<p>An exploit is a piece of software, a chunk of data, or a sequence of commands that takes advantage of a bug or vulnerability to cause unintended or unanticipated behavior to occur on computer software, hardware, or something electronic. </p>
+					<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-common_exploits_and_attacks" class="btn btn-primary"><i class="fas fa-download mr-2"></i> View RHEL  Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>		
+						</section>
+					</article><!--//docs-article-->
+				
+					
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Trobleshooting</h1>
+					    <section class="docs-intro">
+						    <p> Having trouble installing Red Hat Linux? Passwords don't work? Root not working? </p>
+							</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">The Basics of Troubleshooting</h2>
+						<p> Troubleshooting Linux can be very confusing due to all of the moving parts. This doc will aim to cover as much as possible while still being understandable. If you believe something is missing or could be improved, please submit an issue to help to try and get this to be as complete as possible.</p> 
+						<h2> Log files</h2> 
+						<li> /etc/rsyslog.conf - list of log files can be found</li> 
+						<li> /etc/rsyslog.conf - main configuration file for rsyslog</li> 
+						<li> @(zNUMBER)HOST:PORT - forward syslog messages to a remote machine</li> 
+						<li> $outchannel NAME, FILE_NAME, MAX_SIZE, ACTION - define an output channel in /etc/rsyslog.conf</li> 
+						<li> FILTER ^EXECUTABLE; TEMPLATE - the system() call to execute the program in shell</li> 
+						<li> :PLUGIN:DB_HOST,DB_NAME,DB_USER,DB_PASSWORD;TEMPLATE - syslog messages can be directly written into a database table using the database writer action</li> 
+						<p> When accepting messages from any host, and using the shell execute action, you may be vulnerable to command injection. An attacker may try to inject and execute commands in the program you specified to be executed in your action. To avoid any possible security threats, thoroughly consider the use of the shell execute action..</p> 
+						
+						<h2>Commands and processes </h2> 
+						<p> Anything mentioned should have their main page looked at for more details. Additionally, if there is an issue with a graphical tool that does not display an error try running it through the command line.</p> 
+			
+						</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Installations Failures</h2>
+					<p>There can be a wide variety of reasons for a Red Hat Linux installation to fail. This could include issues such as a corrupt or incomplete ISO download, not enough disk space on the target machine, etc. The following article will give you some pointers on what to look for when your Red Hat Linux installation has failed. The following is an example of the dreaded “Red Screen”, indicating the installation encountered a problem. </p> 
+						<!-- image --> 
+						<img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/crashreporting_details.png"> </img>
+						<img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/inst%20fail2.png"> </img>
+						<br>
+						<br>
+						<br>
+						<img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/rhel%20fail%20in%20centos.png"> </img>
+						<br>
+						<br>
+						<img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux/crashreporting_review.png"> </img>
+						
+						
+						
+						</section><!--//section-->
+					
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-8">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Resources</h1>
+					    <section class="docs-intro">
+						   <p> The following resources contain additional information on Red Hat Linux. Please use them to get more in-depth knowledge on this.</p>
+					
+					<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://developers.redhat.com/products/rhel/download" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Download Now</a></th>
+										<th scope="col"><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/developer_guide/index" class="btn btn-secondary"><i class="fas fa-book mr-2"></i> Read PDF Full Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead>
+								
+								</table>
+								</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-8-2">
+						<h2 class="section-heading">Website</h2>
+						<th scope="col"><a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Visit Now</a></th>
+						<th scope="col"><a href="https://opensource.com/?intcmp=701f20000012k6OAAQ" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Open Source</a></th>
+						<th scope="col"><a href="https://www.redhat.com/en/summit?intcmp=701f20000012k6xAAA" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Red Hat Summit</a></th>
+						<th scope="col"><a href="https://enterprisersproject.com/?intcmp=701f20000012k6sAAA" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Enterprises Projects</a></th>
+						
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-8-3">
+							<h2 class="section-heading">Discuss Red Hat Linux</h2>
+						<p>Red Hat Linux is one of the best open-source security packages of an ethical hacker, containing a set of tools divided by categories. Red Hat Linux can be installed in a machine as an Operating System, which is discussed in this tutorial. Installing Red Hat Linux is a practical option as it provides more options to work and combine the tools. This tutorial gives a complete understanding on Red Hat Linux and explains how to use it in practice.</p>
+						</section><!--//section-->
+			    </article><!--//docs-article-->
+		        <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Development</h1>
+					    <section class="docs-intro">
+						    <p> So one could easily rephrase your question and leave “Red Hat ”completely out - - “Can I use LINUX for developing…” And the answer is, of course you can.</p>
+							</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Some Basic Knows Before Development</h2>
+						<p>I don't know where you are on your programming journey or which language(s) you are interested in but many computer science departments are quickly learning what the community has known for a while, that Python is a fantastic language for beginners and power users alike. Your basic Python tools are already installed on any Linux. </p> 
+						<p>But if you really just want to learn programming, then for the sake of security, please do it on a more generic Linux. My personal preference is to run Red Hat but that could be anything. Then install Red Hat as a virtual machine inside that using either VirtualBox . </p> 
+						<p>Red Hat (or whatever) is where you set up your development environment and you only start the Red Hat instance when you want to explore the penetration testing tools. It's a fairly elegant solution, I think. The reason for this is because you don't want the penetration testing tools just laying around for a potential bad guy (or girl) to leverage against you. </p> 
+						<p> For even better security and portability, you could even set up your development environment in a second virtual machine running on top of the base OS. Best of wishes.</p> 
+						
+						</section><!--//section-->
+						
+					
+			    </article><!--//docs-article-->
+				
+				<article class="docs-article" id="section-9">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+					    <section class="docs-intro">
+						   
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-9-1">
+						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How can a user rename a file in Red Hat Linux?</h5>
+						<p>To rename the file, you need first to open the shell command line of Red Hat Linux. There you need to use the “mv command.” Then the command will take to the original file and the newly named file. You need to check the parameters before renaming the files.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What is the command to install Rpm packages? </h5>
+						<p>To install Rpm packages in CentOS and Red Hat, you can use yum and rpm command lines.  </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to create a partition of 100MB and mount it?</h5>
+						<p><li>Use the command “partprobe” and then mkfs -t ext3 /dev/hda?
+First, to create a new partition, the users need to use fdisk /dev/had.</li></p>
+<p><li>Now, for the new partition, type “n.”</li></p>
+<p><li>Then, the users need to select between primary or logical partition. There, press “1” to go for a logical partition. 
+It will then ask to choose the starting cylinder type. Keep it default by pressing “Enter.” </li></p>
+<p><li>Now, the users need to put the size. Put +100M then press “P” for verification of the partition list and name.
+To write the partition on the partitions table, press “W.”  </li></p>
+						
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+				
+				
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="#" target="_blank">Piyumi Rajapaksha</a> for developers</small>
+				        
+						<ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
